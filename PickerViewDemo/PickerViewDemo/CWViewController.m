@@ -101,8 +101,8 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     if (0 == component) {
         self.citiesArray = self.provincesArray[row][@"cities"];
-        [self.pickerView selectRow:0 inComponent:1 animated:YES];
         [self.pickerView reloadAllComponents];
+        [self.pickerView selectRow:0 inComponent:1 animated:YES];
     } else {
         
     }
